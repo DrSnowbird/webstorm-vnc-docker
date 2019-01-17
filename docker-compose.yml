@@ -11,8 +11,13 @@ services:
       - GROUP_ID=${GROUP_ID:-1000}
     env_file:
       - .env
-#    ports:
-#      - 8080:8080
+    ports:
+      - 5901:5901
+      - 6901:5601
     volumes:
+    volumes:
+      - ./WebstormProjects:/home/developer/WebstormProjects
+      - ./.WebstormIC2018.3:/home/developer/.WebstormIC2018.3
+      - ./data:/home/developer/data
       - ./workspace:/home/developer/workspace
-
+      - ./.java:/home/developer/.java
