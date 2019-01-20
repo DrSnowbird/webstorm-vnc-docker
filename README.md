@@ -23,10 +23,11 @@ Image is pulling from openkbs/webstorm-vnc-docker
 ./run.sh
 ```
 
-## Mobile devices supported / tested:
-* SmartPhones: tested ok! iPhone5 Safari works though phone screen size being too small vs the desired HD 1920x1080. It should works across all smartphones with HTML5-capable brwoser. Hence, to access with small phone screen, run with VNC_RESOLUTION=800x600 (or adjust it to fit your phone's screen size)
-* Tablets: tested ok! Amazon Fire with noVNC works!. It should works across all tablets with HTML5-capable brwoser.
+## Mobile devices and Desktop PC supported / tested:
+* SmartPhones: tested ok! iPhone5 Safari works though phone screen size being too small vs the desired HD 1920x1080. It should work across all the smartphones with HTML5-capable brwosers. Hence, to access with small phone screen, run with VNC_RESOLUTION=800x600 (or adjust it to fit your phone's screen size)
+* Tablets: tested ok! Amazon Fire with noVNC works!. It should work across all the tablets with HTML5-capable brwosers.
 ![WebStorm on Amazon Fire tablet](doc/webstorm-vnc-docker-on-Amazon-Fire-tablet.jpeg).
+* Desktop PC or MacBook: tested ok! It should work across all PCs Desktop with HTML5-capable brwosers. ![WebStorm on Desktop PC Browser](doc/webstorm-vnc-docker-on-Desktop-PC-Browser.png)
 
 ## Connect to VNC Viewer/Client or noVNC (Browser-based VNC)
 * connect via VNC viewer localhost:5901, default password: vncpassword
