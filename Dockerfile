@@ -56,15 +56,9 @@ WORKDIR ${HOME}
 USER ${USER}
 
 ENTRYPOINT ["/dockerstartup/vnc_startup.sh"]
-
-CMD ["--wait"]
-
 ##################################
-#### ECLIPSE ####
+#### Webstorm ####
 ##################################
-WORKDIR ${WORKSPACE}
-
-USER ${USER}
 
 CMD "${PRODUCT_EXE}"
 
