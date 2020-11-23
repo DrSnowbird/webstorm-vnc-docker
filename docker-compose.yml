@@ -17,7 +17,7 @@ services:
     volumes:
     volumes:
       - ./WebstormProjects:/home/developer/WebstormProjects
-      - ./.WebstormIC2018.3:/home/developer/.WebstormIC2018.3
+      - ./.WebstormIC2020.3:/home/developer/.WebstormIC2020.3
       - ./data:/home/developer/data
       - ./workspace:/home/developer/workspace
       - ./.java:/home/developer/.java

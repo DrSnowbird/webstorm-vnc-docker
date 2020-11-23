@@ -6,10 +6,11 @@ ARG INSTALL_DIR=${INSTALL_DIR:-/opt}
 
 ####
 #### ---- Per product unique vars: change per product ----
+## WebStorm-2020.2.3.tar.gz
 ## https://download.jetbrains.com/webstorm/WebStorm-2018.3.3.tar.gz
 ## https://download-cf.jetbrains.com/webstorm/WebStorm-2018.3.3.tar.gz
 ## ./WebStorm-183.5153.33//bin/webstorm.sh
-ARG PRODUCT_VER=${PRODUCT_VER:-2018.3.3}
+ARG PRODUCT_VER=${PRODUCT_VER:-2020.2.3}
 
 ARG PRODUCT_DOWNLOAD_ROOT=https://download.jetbrains.com
 ARG PRODUCT_NAME=WebStorm
