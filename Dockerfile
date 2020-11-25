@@ -31,14 +31,15 @@ ENV PRODUCT_EXE=${PRODUCT_EXE}
 ##################################
 WORKDIR ${INSTALL_DIR}
 USER 0
-RUN wget -c --no-check-certificate ${PRODUCT_TGZ_URL} 
-RUN \
+RUN echo `pwd` && wget -c --no-check-certificate ${PRODUCT_TGZ_URL} && \
     tar xvf $(basename ${PRODUCT_TGZ_URL}) && \
-    ls -al ${INSTALL_DIR} && \
-    ln -s ${PRODUCT_HOME}-1* ${PRODUCT_HOME} && \
+    ls -al ${INSTALL_DIR}
+
+RUN ls -al ${INSTALL_DIR}/WebStorm* && \
+    rm -f ${INSTALL_DIR}/${PRODUCT_TGZ} && \
+    ln -s ${INSTALL_DIR}/${PRODUCT_NAME}-* ${INSTALL_DIR}/${PRODUCT_NAME} && \
     ls -al ${PRODUCT_HOME} && \
-    chown -R ${USER_NAME}:${USER_NAME} ${HOME} && \
-    rm ${PRODUCT_TGZ}
+    chown -R ${USER_NAME}:${USER_NAME} ${HOME}
 
 ##################################
 #### Set up user environments ####
